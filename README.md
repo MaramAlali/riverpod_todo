@@ -1,8 +1,8 @@
-# ![App Icon](https://example.com/path/to/your/icon.png) Flutter Riverpod Notification SQLite Firebase Task Management App
+# ![App Icon](https://upload.wikimedia.org/wikipedia/commons/5/5d/GNOME_Todo_icon_2019.svg) Flutter Riverpod Notification SQLite Firebase Task Management App
 
 This is a Flutter app development course designed for beginners to advanced learners, incorporating various technical features such as Riverpod 2.0, SQLite, Firebase login, and local notifications.
 
-The app development process is engaging, starting with a beautiful UI and gradually progressing to advanced concepts like SQLite CRUD operations, generating providers with the Freezed package, Android dynamic color, Firebase login with OTP, and Flutter local notifications for both Android and iOS.
+The app development process is engaging, starting with a beautiful UI and gradually progressing to advanced concepts like SQLite CRUD operations, generating providers with the froze package, Android dynamic color, Firebase login with OTP, and Flutter local notifications for both Android and iOS.
 
 ## Tutorial Features
 
@@ -12,8 +12,8 @@ The app development process is engaging, starting with a beautiful UI and gradua
 - **Generating Riverpod Providers**:
   Learn the latest methods for generating code with the Riverpod 2.0 code generation package and how to work with the generated providers. We will create providers for handling code sending, status changes, expansion tiles, and time management.
 
-- **Freezed Package**:
-  Utilize the Freezed package to simplify data management and state handling in your Flutter app.
+- **Froze Package**:
+  Utilize the froze package to simplify data management and state handling in your Flutter app.
 
 - **Dynamic Color**:
   Implement dynamic color features to enhance the user experience on Android.
