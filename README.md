@@ -1,16 +1,32 @@
-# riverpod_todo
+# ![App Icon](https://example.com/path/to/your/icon.png) Flutter Riverpod Notification SQLite Firebase Task Management App
 
-A new Flutter project.
+This is a Flutter app development course designed for beginners to advanced learners, incorporating various technical features such as Riverpod 2.0, SQLite, Firebase login, and local notifications.
+
+The app development process is engaging, starting with a beautiful UI and gradually progressing to advanced concepts like SQLite CRUD operations, generating providers with the Freezed package, Android dynamic color, Firebase login with OTP, and Flutter local notifications for both Android and iOS.
+
+## Tutorial Features
+
+- **SQLite CRUD**:
+  You will learn to create tasks, save them in the local database, edit them, and delete them as needed. You can also mark tasks as completed.
+
+- **Generating Riverpod Providers**:
+  Learn the latest methods for generating code with the Riverpod 2.0 code generation package and how to work with the generated providers. We will create providers for handling code sending, status changes, expansion tiles, and time management.
+
+- **Freezed Package**:
+  Utilize the Freezed package to simplify data management and state handling in your Flutter app.
+
+- **Dynamic Color**:
+  Implement dynamic color features to enhance the user experience on Android.
+
+- **Firebase OTP**:
+  Integrate Firebase for user authentication using OTP (One Time Password) for secure login.
+
+- **Local Notification**:
+  Set up local notifications to keep users informed about their tasks and reminders.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
