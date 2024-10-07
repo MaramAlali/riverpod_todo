@@ -1,4 +1,4 @@
-# ![App Icon](https://upload.wikimedia.org/wikipedia/commons/5/5d/GNOME_Todo_icon_2019.svg) Flutter Riverpod Notification SQLite Firebase Task Management App
+# ![App Icon](https://upload.wikimedia.org/wikipedia/commons/5/5d/GNOME_Todo_icon_2019.svg) Flutter Task Management App
 
 This is a Flutter app development course designed for beginners to advanced learners, incorporating various technical features such as Riverpod 2.0, SQLite, Firebase login, and local notifications.
 
@@ -27,10 +27,11 @@ The app development process is engaging, starting with a beautiful UI and gradua
 ## Getting Started
 
 1. **Clone the repository**:
-   
+
    git clone <https://github.com/MaramAlali/riverpod_todo.git>
    cd riverpod_todo
-2. **Run the following commands to run app** 
+
+2. **Run the following commands to run app**
    flutter clean
    flutter pub get
    flutter pub run build_runner watch
