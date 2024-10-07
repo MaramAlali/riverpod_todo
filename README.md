@@ -27,11 +27,12 @@ The app development process is engaging, starting with a beautiful UI and gradua
 ## Getting Started
 
 1. **Clone the repository**:
-
+   ```bash
    git clone <https://github.com/MaramAlali/riverpod_todo.git>
    cd riverpod_todo
 
 2. **Run the following commands to run app**
+   ```bash
    flutter clean
    flutter pub get
    flutter pub run build_runner watch
