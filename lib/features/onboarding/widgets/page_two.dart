@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:riverpod_todo/common/widgets/custom_btn.dart';
 import 'package:riverpod_todo/features/todo/pages/login_page.dart';
 import '../../../common/utlis/app_const.dart';
+import '../../../common/widgets/app_style.dart';
 import '../../../common/widgets/height_spacer.dart';
 
 class PageTwo extends StatelessWidget {
@@ -20,7 +21,15 @@ class PageTwo extends StatelessWidget {
         children: [
           Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
-              child: Image.asset("assets/images/2.png")),
+              child: Image.asset("assets/images/not.png")),
+          const HeightSpacer(
+            height: 30,
+          ),
+           Text(
+            "let's start",
+            style: appStyle(30, AppConst.pink, FontWeight.bold),
+            textAlign: TextAlign.center,
+          ),
           const HeightSpacer(
             height: 50,
           ),

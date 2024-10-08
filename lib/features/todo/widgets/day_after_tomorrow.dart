@@ -28,7 +28,7 @@ class DaysAfterTomorrow extends ConsumerWidget {
             .add(const Duration(days: 2))
             .toString()
             .substring(5, 10),
-        text2: "soon task",
+        text2: "expanded to show soon task",
         onExpansionChanged: (bool expanded) {
           ref.read(xpansionStateProvider.notifier).setStart(!expanded);
         },
@@ -68,7 +68,7 @@ class DaysAfterTomorrow extends ConsumerWidget {
                     width: 40.w,
                     child: const Icon(
                       MaterialCommunityIcons.circle_edit_outline,
-                      color: AppConst.white,
+                      color: AppConst.lightGrey,
                     ),
                   )),
               switcher: const SizedBox.shrink(),

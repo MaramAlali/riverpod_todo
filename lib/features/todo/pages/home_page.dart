@@ -50,27 +50,26 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
               preferredSize: Size.fromHeight(20.h),
               child: Column(
                 children: [
-
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 20.w),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         Image.asset(
-                          "assets/images/11.png",
-                          width:50 ,
-                          height: 40,
+                          "assets/images/icon.png",
+                          width:65 ,
+                          height: 50,
                         ),
                         ReusableText(
-                            text: "Memo To Do",
+                            text: "TaskTracker",
                             style:
                                 appStyle(35, AppConst.pink, FontWeight.normal)),
                         Container(
                           width: 30,
                           height: 30,
                           decoration: const BoxDecoration(
-                            color: AppConst.white,
+                            color: AppConst.lightGrey,
                             borderRadius: BorderRadius.all(Radius.circular(9)),
                           ),
                           child: InkWell(
@@ -140,7 +139,7 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
                     const Icon(
                       FontAwesome.tasks,
                       size: 18,
-                      color: AppConst.white,
+                      color: AppConst.lightGrey,
                     ),
                     const WidthSpacer(width: 10),
                     ReusableText(
@@ -151,7 +150,7 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
                 const HeightSpacer(height: 25),
                 Container(
                   decoration: BoxDecoration(
-                    color: AppConst.white,
+                    color: AppConst.grey,
                     borderRadius:
                         BorderRadius.all(Radius.circular(AppConst.radius)),
                   ),
@@ -164,7 +163,7 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
                       controller: tabController,
                       labelPadding: EdgeInsets.zero,
                       isScrollable: false,
-                      labelColor: AppConst.white,
+                      labelColor: AppConst.grey,
                       tabs: [
                         Tab(
                           child: SizedBox(
@@ -200,11 +199,11 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
                     child: TabBarView(controller: tabController, children: [
                       Container(
                           height: AppConst.height * 0.3,
-                          color: AppConst.white,
+                          color: AppConst.lightGrey,
                           child: const TodayTasks()),
                       Container(
                         height: AppConst.height * 0.3,
-                        color: AppConst.white,
+                        color: AppConst.lightGrey,
                         child: const CompletedTask(),
                       ),
                     ]),
@@ -214,11 +213,13 @@ class _HomePage extends ConsumerState<HomePage> with TickerProviderStateMixin {
                 ReusableText(
                     text: "Tomorrow Tasks",
                     style: appStyle(30, AppConst.white, FontWeight.normal)),
+                const HeightSpacer(height: 25),
                 const TomorrowList(),
                 const HeightSpacer(height: 20),
                 ReusableText(
                     text: "Soon Tasks",
                     style: appStyle(30, AppConst.white, FontWeight.normal)),
+                const HeightSpacer(height: 25),
                 const DaysAfterTomorrow(),
                 const HeightSpacer(height: 20),
               ],

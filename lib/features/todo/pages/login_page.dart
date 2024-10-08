@@ -50,71 +50,74 @@ class _LoginPageState extends ConsumerState<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: 10.w,
-            ),
-            child: ListView(
-              children: [
-                Image.asset(
-                  "assets/images/2.png",
-                  width: 300,
-                ),
-                const HeightSpacer(height: 20),
-                Center(
-                  child: ReusableText(
-                      text: "please enter phone number",
-                      style: appStyle(20, AppConst.white, FontWeight.w700)),
-                ),
-                const HeightSpacer(height: 40),
-                Center(
-                  child: CustomTextField(
-                    prefixIcon: Container(
-                      padding: const EdgeInsets.all(9),
-                      child: GestureDetector(
-                        onTap: () {
-                          showCountryPicker(
-                              context: context,
-                              countryListTheme: CountryListThemeData(
-                                backgroundColor: AppConst.white,
-                                bottomSheetHeight: AppConst.height * 0.6,
-                                borderRadius: BorderRadius.only(
-                                  topLeft: Radius.circular(AppConst.radius),
-                                  topRight: Radius.circular(AppConst.radius),
-                                ),
-                              ),
-                              onSelect: (code) {
-                                setState(() {
-                                  country = code;
-                                });
-
-                              });
-                        },
-                        child: ReusableText(
-                            text: "${country.flagEmoji}+${country.phoneCode}",
-                            style:
-                                appStyle(18, AppConst.black, FontWeight.bold)),
-                      ),
-                    ),
-                    keyboardType: TextInputType.phone,
-                    hintText: "enter phone number",
-                    hintStyle: appStyle(18, AppConst.black, FontWeight.w600),
-                    controller: phone,
+        child: Container(
+          color: AppConst.black,
+          child: Padding(
+              padding: EdgeInsets.symmetric(
+                horizontal: 10.w,
+              ),
+              child: ListView(
+                children: [
+                  Image.asset(
+                    "assets/images/2.png",
+                    width: 300,
                   ),
-                ),
-                const HeightSpacer(height: 30),
-                CustomBtn(
-                  onTap: () {
-                    sendCodeToUser();
-                  },
-                  width: AppConst.width * 0.9,
-                  height: AppConst.height * 0.07,
-                  color: AppConst.black,
-                  text: "send code",
-                  color2: AppConst.lightPurple,
-                ),
-              ],
-            )),
+                  const HeightSpacer(height: 20),
+                  Center(
+                    child: ReusableText(
+                        text: "please enter phone number",
+                        style: appStyle(20, AppConst.white, FontWeight.w700)),
+                  ),
+                  const HeightSpacer(height: 40),
+                  Center(
+                    child: CustomTextField(
+                      prefixIcon: Container(
+                        padding: const EdgeInsets.all(9),
+                        child: GestureDetector(
+                          onTap: () {
+                            showCountryPicker(
+                                context: context,
+                                countryListTheme: CountryListThemeData(
+                                  backgroundColor: AppConst.white,
+                                  bottomSheetHeight: AppConst.height * 0.6,
+                                  borderRadius: BorderRadius.only(
+                                    topLeft: Radius.circular(AppConst.radius),
+                                    topRight: Radius.circular(AppConst.radius),
+                                  ),
+                                ),
+                                onSelect: (code) {
+                                  setState(() {
+                                    country = code;
+                                  });
+
+                                });
+                          },
+                          child: ReusableText(
+                              text: "${country.flagEmoji}+${country.phoneCode}",
+                              style:
+                                  appStyle(18, AppConst.black, FontWeight.bold)),
+                        ),
+                      ),
+                      keyboardType: TextInputType.phone,
+                      hintText: "enter phone number",
+                      hintStyle: appStyle(18, AppConst.black, FontWeight.w600),
+                      controller: phone,
+                    ),
+                  ),
+                  const HeightSpacer(height: 30),
+                  CustomBtn(
+                    onTap: () {
+                      sendCodeToUser();
+                    },
+                    width: AppConst.width * 0.9,
+                    height: AppConst.height * 0.07,
+                    color: AppConst.black,
+                    text: "send code",
+                    color2: AppConst.lightPurple,
+                  ),
+                ],
+              )),
+        ),
       ),
     );
   }

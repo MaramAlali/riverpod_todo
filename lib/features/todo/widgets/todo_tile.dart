@@ -53,12 +53,12 @@ class TodoTile extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             ReusableText(
-                                text: title ?? "Title of ToDO ",
+                                text: title ?? "Title of task ",
                                 style: appStyle(
                                     20, AppConst.black, FontWeight.bold)),
                             const HeightSpacer(height: 15),
                             ReusableText(
-                                text: description ?? "Description of ToDO ",
+                                text: description ?? "Description of task ",
                                 style: appStyle(
                                     15, AppConst.grey, FontWeight.bold)),
                             const HeightSpacer(height: 12),
@@ -74,7 +74,7 @@ class TodoTile extends StatelessWidget {
                                           width: 0.3, color: AppConst.grey),
                                       borderRadius:
                                       BorderRadius.circular(AppConst.radius),
-                                      color: AppConst.white,
+                                      color: AppConst.lightGrey,
                                     ),
                                     child: Center(
                                         child: ReusableText(
@@ -89,7 +89,7 @@ class TodoTile extends StatelessWidget {
                                        WidthSpacer(width: 40.h),
                                       GestureDetector(
                                         onTap:delete ,
-                                        child:  const Icon(MaterialCommunityIcons.delete_circle,color: AppConst.white,size: 30,),
+                                        child:  const Icon(MaterialCommunityIcons.delete_circle,color: AppConst.lightGrey,size: 30,),
                                       )
 
                                     ],

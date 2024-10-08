@@ -37,7 +37,7 @@ class MyApp extends ConsumerWidget {
             title: 'Maram Alali',
             themeMode: ThemeMode.dark,
             theme: ThemeData(
-              scaffoldBackgroundColor: AppConst.lightBlack,
+              scaffoldBackgroundColor: AppConst.black,
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),

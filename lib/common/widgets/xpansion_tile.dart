@@ -17,7 +17,7 @@ class XpansionTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: AppConst.white,
+        color: AppConst.lightGrey,
         borderRadius: BorderRadius.circular(AppConst.radius),
       ),
       child: Theme(

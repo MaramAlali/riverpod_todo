@@ -30,7 +30,7 @@ class NotificationHelper {
         onDidReceiveLocalNotification: onDidReceiveLocalNotification);
 
     const AndroidInitializationSettings androidInitializationSettings =
-    AndroidInitializationSettings("logo");
+    AndroidInitializationSettings("icon");
     final InitializationSettings initializationSettings =
     InitializationSettings(
       android: androidInitializationSettings,
@@ -39,7 +39,7 @@ class NotificationHelper {
 
     await flutterLocalNotificationsPlugin.initialize(initializationSettings,
         onDidReceiveNotificationResponse: (data) async {
-          debugPrint('Notification payload: ${data.payload}');
+          debugPrint('Notification payload++++++: ${data.payload}');
           selectNotificationSubject.add(data.payload);
         });
   }
@@ -57,7 +57,7 @@ class NotificationHelper {
 
   Future<void> _configureLocalTimeZone() async {
     tz.initializeTimeZones();
-    const String timeZoneName = 'Asia/Damascus';
+    const String timeZoneName = 'Europe/Amsterdam';
     tz.setLocalLocation(tz.getLocation(timeZoneName));
 
 

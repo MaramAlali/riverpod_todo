@@ -18,6 +18,7 @@ class AuthController {
       required String smsCode,
       required bool mounted}) {
     authRepository.verifyOtp(
+
         context: context, smsId: smsId, smsCode: smsCode, mounted: mounted);
   }
 

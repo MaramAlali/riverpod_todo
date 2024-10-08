@@ -24,9 +24,9 @@ class TomorrowList extends ConsumerWidget {
         todos.where((element) => element.date!.contains(tomorrow));
     return XpansionTile(
         text: "tomorrow task",
-        text2: "",
+        text2: "expanded to show tomorrow task",
         onExpansionChanged: (bool expanded) {
-          ref.read(xpansionStateProvider.notifier).setStart(!expanded);
+          ref.read(xpansionStateProvider.notifier).setStart(expanded);
         },
         trailing: Padding(
           padding: EdgeInsets.only(right: 12.0.w),
@@ -62,7 +62,7 @@ class TomorrowList extends ConsumerWidget {
                 },
                   child:
                   SizedBox(width: 40.w,
-                    child: const Icon(MaterialCommunityIcons.circle_edit_outline,color: AppConst.white,),)
+                    child: const Icon(MaterialCommunityIcons.circle_edit_outline,color: AppConst.lightGrey,),)
               ),
               switcher: const SizedBox.shrink(),
             ),

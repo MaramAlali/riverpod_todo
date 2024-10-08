@@ -20,15 +20,16 @@ class PageOne extends StatelessWidget {
         children: [
           Padding(
               padding: EdgeInsets.symmetric(horizontal: 30.w),
-              child: Image.asset("assets/images/2.png")),
+              child: Image.asset("assets/images/2.png",width: 200,height: 200,)),
           const HeightSpacer(
             height: 100,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              ReusableText(
-                  text: "To Do App with a River Pod",
+              Text(
+                  "TaskTracker  with a River Pod",
+                  textAlign: TextAlign.center,
                   style: appStyle(30, AppConst.white, FontWeight.w600)),
               const HeightSpacer(
                 height: 10,
